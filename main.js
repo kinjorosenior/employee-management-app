@@ -13,6 +13,7 @@ function saveContacts(contacts) {
 // INIT APP
 // =======================
 document.addEventListener("DOMContentLoaded", () => {
+    seedContacts();
     handleFormSubmit();
     loadContacts();
     loadDashboard();
@@ -51,6 +52,45 @@ function handleFormSubmit() {
         // 🔥 Redirect to view contacts page
         window.location.href = "view-contacts.html";
     });
+}
+
+// =======================
+// INITIAL DEFAULT DATA
+// =======================
+function seedContacts() {
+    let contacts = getContacts();
+
+    // Only add if empty
+    if (contacts.length === 0) {
+        const defaultContacts = [
+            {
+                id: Date.now(),
+                firstName: "John",
+                lastName: "Doe",
+                email: "john@example.com",
+                phone: "0712345678",
+                position: "Developer"
+            },
+            {
+                id: Date.now() + 1,
+                firstName: "Mary",
+                lastName: "Wanjiku",
+                email: "mary@example.com",
+                phone: "0723456789",
+                position: "Manager"
+            },
+            {
+                id: Date.now() + 2,
+                firstName: "Brian",
+                lastName: "Otieno",
+                email: "brian@example.com",
+                phone: "0734567890",
+                position: "Designer"
+            }
+        ];
+
+        saveContacts(defaultContacts);
+    }
 }
 
 // =======================
