@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>New Contact</title>
+    <title>Add Contact</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav>
-    <h2>EMS</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="new-contact.html">New Contact</a></li>
-        <li><a href="view-contacts.html">View Contacts</a></li>
-    </ul>
-</nav>
+<div class="layout">
 
-<div class="container">
-    <h2>Add New Employee</h2>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="profile">
+            <img src="C:\Users\PC\Desktop\employee-management-app-1\images\Trr this.jpeg">
+            <h3>Stephen Mwangi</h3>
+            <span class="online">● Online</span>
+        </div>
 
-    <form id="contactForm">
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="text" placeholder="Phone Number" required>
-        <input type="text" placeholder="Department" required>
-        <input type="text" placeholder="Position" required>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="new-contact.html">Add New Contact</a></li>
+            <li><a href="view-contacts.html">View All Contacts</a></li>
+        </ul>
+    </div>
 
-        <button type="submit">Submit</button>
-    </form>
+    <!-- Form -->
+    <div class="main">
+        <div class="form-box">
+            <h2>Add New Contact</h2>
+
+            <form>
+                <input type="text" placeholder="ID Number">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+
+                <div class="gender">
+                    <label><input type="radio" name="gender"> Male</label>
+                    <label><input type="radio" name="gender"> Female</label>
+                </div>
+
+                <input type="text" placeholder="+2547...">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Address">
+                <input type="date">
+
+                <select>
+                    <option>Select Position</option>
+                    <option>Manager</option>
+                    <option>Developer</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
 </div>
 
-<script src="main.js"></script>
 </body>
 </html>

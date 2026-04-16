@@ -6,42 +6,43 @@
 </head>
 <body>
 
-<nav>
-    <h2>EMS</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="new-contact.html">New Contact</a></li>
-        <li><a href="view-contacts.html">View Contacts</a></li>
-    </ul>
-</nav>
+<div class="layout">
 
-<div class="container">
-    <h2>Employee Contacts</h2>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="profile">
+            <img src="C:\Users\PC\Desktop\employee-management-app-1\images\Trr this.jpeg">
+            <h3>Stephen Mwangi</h3>
+            <span class="online">● Online</span>
+        </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>Department</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody id="tableBody">
-            <tr>
-                <td>John Doe</td>
-                <td>john@example.com</td>
-                <td>0712345678</td>
-                <td>IT</td>
-                <td>
-                    <button onclick="viewDetails()">Details</button>
-                    <button onclick="editContact()">Edit</button>
-                    <button onclick="deleteContact()">Delete</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="new-contact.html">Add New Contact</a></li>
+            <li><a href="view-contacts.html">View All Contacts</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <h2>Employee Contacts</h2>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Position</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
 </div>
 
 <script src="main.js"></script>

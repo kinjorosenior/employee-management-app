@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Employee Management System</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav>
-    <h2>EMS</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="new-contact.html">New Contact</a></li>
-        <li><a href="view-contacts.html">View Contacts</a></li>
-    </ul>
-</nav>
+<div class="layout">
 
-<div class="container">
-    <h1>Employee Management System</h1>
-    <p>Welcome! This system helps you manage employee contact information easily.</p>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="profile">
+            <img src="C:\Users\PC\Desktop\employee-management-app-1\images\Trr this.jpeg">
+            <h3>Stephen Mwangi</h3>
+            <span class="online">● Online</span>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="new-contact.html">Add New Contact</a></li>
+            <li><a href="view-contacts.html">View All Contacts</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <h2>Dashboard</h2>
+
+        <div class="cards">
+            <div class="card blue">
+                <h1>5</h1>
+                <p>No. of Positions</p>
+            </div>
+
+            <div class="card green">
+                <h1 id="contactCount">0</h1>
+                <p>No. of Contacts</p>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 </body>
